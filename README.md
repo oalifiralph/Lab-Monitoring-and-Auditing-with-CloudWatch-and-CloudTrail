@@ -11,8 +11,9 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpiiBVPv8hPlWDzWtGBtSbBGVmYR9M3v2K1Q&s" width="100" alt="AWS Logo">
 <img src="https://files.svgcdn.io/logos/aws-ec2.svg" width="100" alt="AWS Logo">
 <img src="https://cdn.worldvectorlogo.com/logos/amazon-s3-simple-storage-service.svg" width="100" alt="AWS Logo">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsHozuh-tDR3wCxV5bR-TI04bRbnVmfISpA&s" width="100" alt="AWS Logo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrUpzUssOhdXOwDABX-Hye7Xl7e_zBQwPzLRsUHf1pu35uMYdbbgmEIJXy78IFHqKtFq8&usqp=CAU" width="100" alt="AWS Logo">
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true?raw=true" width="113" alt="Second Image">
+<ing src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/issues/2"
 </a>
 
 </div>
