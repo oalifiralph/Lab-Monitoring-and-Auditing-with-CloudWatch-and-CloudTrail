@@ -12,7 +12,7 @@
 <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Compute/64/Arch_Amazon-EC2_64@5x.png" width="100" alt="AWS EC2">
 <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Storage/64/Arch_Amazon-Simple-Storage-Service_64.svg" width="100" alt="AWS S3">
 <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_App-Integration/Arch_64/Arch_Amazon-Simple-Notification-Service_64.svg" width="100" alt="AWS SNS">
-<img src="" width="113" alt="Logo-EDN">
+<img src="https://github.com/oalifiralph/oalifiralph/blob/main/img/EDN-Logo.svg" width="113" alt="Logo-EDN">
 <ing src=""
 </a>
 
