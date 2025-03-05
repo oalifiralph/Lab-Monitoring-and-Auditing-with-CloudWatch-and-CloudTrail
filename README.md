@@ -1,7 +1,7 @@
 <div align="center" style="font-family: Arial, sans-serif; font-size: 20px; line-height: 1.5;">
 
-# 💻☁️ **Curso DPCN-EDN** ☁️💻
-# 🌟 Solutions Architect Associate  🌟
+# ☁️ **Curso DPCN-EDN** ☁️
+# 👨🏻‍💻 Solutions Architect Associate  👨🏻‍💻
 
 ###
 <a href="https://escoladanuvem.org"><a href="https://aws.amazon.com/pt/?nc2=h_lg">
@@ -19,7 +19,9 @@
 </div>
 
 
-# 🏗️ Laboratório: Monitoramento e Auditoria na AWS com CloudWatch e CloudTrail
+# 👨🏻‍🔬 Laboratório: 
+
+## Monitoramento e Auditoria com CloudWatch e CloudTrail. 
 
 **Turma:** DPCN 07  
 **Aluno:** Álifi Ralph 
