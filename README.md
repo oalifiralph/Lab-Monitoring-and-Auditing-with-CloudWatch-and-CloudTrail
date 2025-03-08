@@ -4,8 +4,7 @@
 # 👨🏻‍💻 Solutions Architect Associate  👨🏻‍💻
 
 ###
-<div>
-  
+
 <img src="https://figmaresource.com/wp-content/uploads/2024/05/AWS-Marketplace-Logo-PNG-to-svg-1.svg" width="100" alt="AWS Logo"> 
 <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.svg" width="100" alt="AWS CloudWatch"> 
 <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_AWS-CloudTrail_64.svg" width="100" alt="AWS CloudTrail">
@@ -15,7 +14,6 @@
 <img src="https://github.com/oalifiralph/oalifiralph/blob/main/img/EDN-Logo.svg" width="113" alt="Logo-EDN"> 
 
 </div>
-
 
 # 👨🏻‍🔬 Laboratório: 
 
