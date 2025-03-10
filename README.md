@@ -36,3 +36,32 @@ Uma startup de tecnologia está migrando sua infraestrutura para a AWS e precisa
 - Os logs devem ser armazenados com segurança no S3 para futura análise e conformidade regulatória.
 
 Para atender a esses requisitos, você configurará CloudWatch, SNS, CloudTrail e S3, garantindo monitoramento proativo e auditoria contínua.
+
+## Pré-requisitos:
+- **Conta AWS**: Conta ativa com permissões para EC2, CloudWatch, CloudTrail, SNS e S3.
+- **Permissões IAM**: `CloudWatchFullAccess`, `AWSCloudTrail_FullAccess`, `AmazonSNSFullAccess`, `AmazonS3FullAccess`, `AmazonEC2FullAccess`.
+- **Navegador Web**.
+
+---
+
+## Passo 1: Criar uma Instância EC2
+
+1. **Console EC2**: Acesse o console do EC2.
+2. **Instância de lançamento**:
+   - **Nome**: `Instancia-Teste-CloudWatch`.
+   - **AMI**: `Amazon Linux 2 (HVM) - x86_64`.
+   - **Tipo de instância**: `t2.micro`.
+   - **Key pair**: Selecione ou crie um par de chaves. (Você precisará acessar a instância, então saiba onde está salvo o seu par de chaves).
+   - **Configurações de rede**:
+     - **VPC**: Sua VPC padrão.
+     - **Subnet**: Qualquer sub-rede pública.
+     - **Atribuição automática de IP público**: Habilitar.
+   - **Firewall**:
+     - Crie um grupo de segurança:
+       - **Name**: `SG-Teste-CloudWatch-SeuNome`.
+       - **Entrada**: SSH, Fonte: Meu IP.
+   - **Configure storage**: Padrão.
+   - **Detalhes avançados**: Nada.
+3. **Instância de lançamento**.
+4. **Anote o Instance ID**.
+
