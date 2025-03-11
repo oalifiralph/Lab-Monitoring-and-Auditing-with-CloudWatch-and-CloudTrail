@@ -67,3 +67,8 @@ Para atender a esses requisitos, você configurará CloudWatch, SNS, CloudTrail 
 3. **Instância de lançamento**.
 4. **Anote o Instance ID**.
 
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/EC2-Launch-01.png" width="800" alt="Dashboard">
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2.png" width="800" alt="EC2-Launch">
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2-2.png" width="800" alt="EC2-Launch">-
+
+
