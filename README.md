@@ -48,12 +48,20 @@ Para atender a esses requisitos, você configurará CloudWatch, SNS, CloudTrail 
 
 ## Passo 1: Criar uma Instância EC2
 
-1. **Console EC2**: Acesse o console do EC2.
-2. **Instância de lançamento**:
+### 1. Acesse o console do EC2.
+
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/EC2-Launch-01.png" width="1000" alt="Dashboard">-
+
+### 2.1 **Crie uma Instância de lançamento**:
    - **Nome**: `Instancia-Teste-CloudWatch`.
    - **AMI**: `Amazon Linux 2 (HVM) - x86_64`.
    - **Tipo de instância**: `t2.micro`.
-   - **Key pair**: Selecione ou crie um par de chaves. (Você precisará acessar a instância, então saiba onde está salvo o seu par de chaves).
+
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2.png" width="1000" alt="EC2-Launch">-
+
+### 2.2 **Crie uma Instância de lançamento**:
+
+- **Key pair**: Selecione ou crie um par de chaves. (Você precisará acessar a instância, então saiba onde está salvo o seu par de chaves).
    - **Configurações de rede**:
      - **VPC**: Sua VPC padrão.
      - **Subnet**: Qualquer sub-rede pública.
@@ -62,13 +70,23 @@ Para atender a esses requisitos, você configurará CloudWatch, SNS, CloudTrail 
      - Crie um grupo de segurança:
        - **Name**: `SG-Teste-CloudWatch-SeuNome`.
        - **Entrada**: SSH, Fonte: Meu IP.
+
+### 2.3 **Crie uma Instância de lançamento**:
+
+<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2-3.png" width="1000" alt="EC2-Launch">-
+
    - **Configure storage**: Padrão.
    - **Detalhes avançados**: Nada.
+
+
+  
+
+
+
 3. **Instância de lançamento**.
 4. **Anote o Instance ID**.
 
-<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/EC2-Launch-01.png" width="800" alt="Dashboard">
-<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2.png" width="800" alt="EC2-Launch">
-<img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2-2.png" width="800" alt="EC2-Launch">-
+
+
 
 
