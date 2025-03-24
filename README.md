@@ -17,7 +17,7 @@
 
 # 👨🏻‍🔬 Laboratório: 
 
-## Monitoramento e Auditoria com CloudWatch e CloudTrail. 
+## Monitoramento e Auditoria com CloudWatch e CloudTrail
 
 **Turma:** DPCN 07  
 **Aluno:** Álifi Ralph 
@@ -48,7 +48,7 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 
 ## Passos para Criar uma Instância de lançamento no EC2:
 
-## 1. Acesse o console do EC2.
+## 1. Acesse o console do EC2
 
 <img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/EC2-Launch-01.png" width="1000" alt="Dashboard">-
 
@@ -86,9 +86,13 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 
 ---
 
-## 2: Passos para Configurar um Alarme no CloudWatch
+## **Passos para Configurar um Alarme no CloudWatch**
 
-1. **Console CloudWatch**: Acesse o console do CloudWatch.
+## 2.1 Acesse o console do **CloudWatch**
+
+<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/CloudWatch-Painel.png?raw=true" width="1000" alt="CloudWatch-Painel">-
+
+
 2. **Criar Alarme**:
    - **Alarmes** -> **Criar alarme**.
    - **Selecione a métrica**:
