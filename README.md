@@ -79,7 +79,7 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
    - **Configure storage**: Padrão.
    - **Detalhes avançados**: Nada.
 
-## 2.3 **Revise as configurações pelo Sumário**.
+## 2.3 **Revise as Configurações pelo Sumário**.
 
 - **Clique em Instância de lançamento para Criar a Instância**
 - **Anote o ID da Instância**.
