@@ -66,18 +66,18 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 - **Configurações de rede**:
      - **VPC**: Sua VPC padrão.
      - **Subnet**: Qualquer sub-rede pública.
-     - **Atribuição automática de IP público**: Habilitar.
+     - **Atribuição automática de IP público**: `Habilitar`
    - **Firewall**:
      - Crie um grupo de segurança:
-       - **Name**: `SG-Teste-CloudWatch-SeuNome`.
-       - **Entrada**: SSH, Fonte: Meu IP.
+       - **Name**: `SG-Teste-CloudWatch-SeuNome`
+       - **Entrada**: `SSH`, Fonte: `Meu IP`
 
 <img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/EC2-Launch/Launch-EC2-2.png?raw=true" width="1000" alt="EC2-Launch">-
 <img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2-3.png" width="1000" alt="EC2-Launch">-
 
 ### 1.3 **Crie uma Instância de lançamento**:
-   - **Configure storage**: Padrão.
-   - **Detalhes avançados**: Nada.
+   - **Configure storage**: `Padrão`
+   - **Detalhes avançados**: `Nenhum`
 
 ### 1.4 **Revise as Configurações pelo Sumário**.
 
@@ -88,12 +88,14 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 
 ## **Passos para Configurar um Alarme no CloudWatch**
 
-## 2.1 Acesse o console do **CloudWatch**
+### 2.1 Acesse o console do **CloudWatch**
 
 <img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/CloudWatch-Painel.png?raw=true" width="1000" alt="CloudWatch-Painel">-
 
+### 2.2 **Criando Alarme**:
 
-2. **Criar Alarme**:
+<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/Specify-Metric.png?raw=true" width="1000" alt="CloudWatch-Metric">-
+
    - **Alarmes** -> **Criar alarme**.
    - **Selecione a métrica**:
      - **Todas as métricas** -> **EC2** -> **Métricas por instância**.
@@ -102,21 +104,27 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
      - **Métricas gráficas Aba (1)**: Verifique.
      - Selecione a métrica.
    - **Especifique a métrica e as condições**:
-     - **Estatística**: Média.
-     - **Período**: 5 minutos.
+     - **Nome da Métrica** `Utilização de CPU`
+     - **ID**: `i-03421e1e82927bdea`
+     - **Estatística**: `Média`
+     - **Período**: `5 minutos`
      - **Condições**:
-       - **Tipo de limite**: Estático.
-       - **Sempre que CPUUtilization for...**: Maior que...: 70.
-     - **Configuração adicional**:
-       - **Pontos de dados para alarme**: 1 de 1.
-       - **Tratamento de dados ausentes**: trate os dados ausentes como bons (sem ultrapassar o limite).
+       - **Tipo de limite**: `Estático`
+       - **Sempre que CPUUtilization for...**: Maior que...: `70`
+
+<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/Preview-and-Create-alarm.png?raw=true" width="1000" alt="CloudWatch-Metric">-
+
+   - **Configuração adicional**:
+   - **Pontos de dados para alarme**: `1 de 1`
+   - **Tratamento de dados ausentes**: `trate os dados ausentes como bons (sem ultrapassar o limite).`
+       
    - **Próximo**.
 3. **Configurar ações**:
-   - **Disparador de estado de alarme**: Em alarme.
+   - **Disparador de estado de alarme**: `Em alarme`
    - **Selecione um tópico SNS**: Crie um tópico SNS (confirme a assinatura).
    - **Próximo**.
 4. **Adicione um nome e uma descrição**:
-   - **Alarm name**: `AlarmeCPU-Instancia-SeuNome`.
+   - **Alarm name**: `AlarmeCPU-Instancia-SeuNome` 
    - **Próximo**.
 5. **Visualizar e criar**: Revisar e Criar alarme.
 
