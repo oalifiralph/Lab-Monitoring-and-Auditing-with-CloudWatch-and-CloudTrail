@@ -52,14 +52,14 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 
 <img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/EC2-Launch-01.png" width="1000" alt="Dashboard">-
 
-## 2. **Crie uma Instância de lançamento**:
+### 1.1. **Crie uma Instância de lançamento**:
    - **Nome**: `Instancia-Teste-CloudWatch`.
    - **AMI**: `Amazon Linux 2 (HVM) - x86_64`.
    
 
 <img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2.png" width="1000" alt="EC2-Launch">-
 
-## 2.1 **Crie uma Instância de lançamento**:
+### 1.2 **Crie uma Instância de lançamento**:
 
 - **Tipo de instância**: `t2.micro`.
 - **Key pair**: Selecione ou crie um par de chaves. (Você precisará acessar a instância, então saiba onde está salvo o seu par de chaves).
@@ -75,16 +75,46 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 <img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/EC2-Launch/Launch-EC2-2.png?raw=true" width="1000" alt="EC2-Launch">-
 <img src="https://raw.githubusercontent.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/refs/heads/main/EC2-Launch/Launch-EC2-3.png" width="1000" alt="EC2-Launch">-
 
-## 2.2 **Crie uma Instância de lançamento**:
+### 1.3 **Crie uma Instância de lançamento**:
    - **Configure storage**: Padrão.
    - **Detalhes avançados**: Nada.
 
-## 2.3 **Revise as Configurações pelo Sumário**.
+### 1.4 **Revise as Configurações pelo Sumário**.
 
 - **Clique em Instância de lançamento para Criar a Instância**
 - **Anote o ID da Instância**.
 
+---
 
+## 2: Passos para Configurar um Alarme no CloudWatch
+
+1. **Console CloudWatch**: Acesse o console do CloudWatch.
+2. **Criar Alarme**:
+   - **Alarmes** -> **Criar alarme**.
+   - **Selecione a métrica**:
+     - **Todas as métricas** -> **EC2** -> **Métricas por instância**.
+     - Cole o **ID da instância** (anotada do passo anterior) na caixa de pesquisa.
+     - Marque **CPUUtilization** da sua instância.
+     - **Métricas gráficas Aba (1)**: Verifique.
+     - Selecione a métrica.
+   - **Especifique a métrica e as condições**:
+     - **Estatística**: Média.
+     - **Período**: 5 minutos.
+     - **Condições**:
+       - **Tipo de limite**: Estático.
+       - **Sempre que CPUUtilization for...**: Maior que...: 70.
+     - **Configuração adicional**:
+       - **Pontos de dados para alarme**: 1 de 1.
+       - **Tratamento de dados ausentes**: trate os dados ausentes como bons (sem ultrapassar o limite).
+   - **Próximo**.
+3. **Configurar ações**:
+   - **Disparador de estado de alarme**: Em alarme.
+   - **Selecione um tópico SNS**: Crie um tópico SNS (confirme a assinatura).
+   - **Próximo**.
+4. **Adicione um nome e uma descrição**:
+   - **Alarm name**: `AlarmeCPU-Instancia-SeuNome`.
+   - **Próximo**.
+5. **Visualizar e criar**: Revisar e Criar alarme.
 
 
 
