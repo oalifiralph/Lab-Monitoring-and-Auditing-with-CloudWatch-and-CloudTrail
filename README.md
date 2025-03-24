@@ -94,8 +94,6 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
 
 ### 2.2 **Criando Alarme**:
 
-<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/Specify-Metric.png?raw=true" width="1000" alt="CloudWatch-Metric">-
-
    - **Alarmes** -> **Criar alarme**.
    - **Selecione a métrica**:
      - **Todas as métricas** -> **EC2** -> **Métricas por instância**.
@@ -103,6 +101,9 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
      - Marque **CPUUtilization** da sua instância.
      - **Métricas gráficas Aba (1)**: Verifique.
      - Selecione a métrica.
+
+<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/CloudWatch-Metrics.png?raw=true" width="1000" alt="CloudWatch-Metric">-
+
    - **Especifique a métrica e as condições**:
      - **Nome da Métrica** `Utilização de CPU`
      - **ID**: `i-03421e1e82927bdea`
@@ -111,15 +112,18 @@ Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **C
      - **Condições**:
        - **Tipo de limite**: `Estático`
        - **Sempre que CPUUtilization for...**: Maior que...: `70`
+      
+<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/Specify-Metric.png?raw=true" width="1000" alt="CloudWatch-Metric">-
+       
 
-<img src="https://github.com/oalifiralph/Lab-Monitoring-and-Auditing-with-CloudWatch-and-CloudTrail/blob/main/CloudWatch/Preview-and-Create-alarm.png?raw=true" width="1000" alt="CloudWatch-Metric">-
-
-   - **Configuração adicional**:
-   - **Pontos de dados para alarme**: `1 de 1`
-   - **Tratamento de dados ausentes**: `trate os dados ausentes como bons (sem ultrapassar o limite).`
+    - **Configuração adicional**:
+    - **Pontos de dados para alarme**: `1 de 1`
+    - **Tratamento de dados ausentes**: `trate os dados ausentes como bons (sem ultrapassar o limite).`
        
    - **Próximo**.
-3. **Configurar ações**:
+
+### 2.3 **Configurar ações**:
+
    - **Disparador de estado de alarme**: `Em alarme`
    - **Selecione um tópico SNS**: Crie um tópico SNS (confirme a assinatura).
    - **Próximo**.
