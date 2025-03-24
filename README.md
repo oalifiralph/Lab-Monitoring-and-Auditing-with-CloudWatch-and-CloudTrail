@@ -23,24 +23,24 @@
 **Aluno:** Álifi Ralph 
 
 ## 📌 Objetivos:
-✅ Criar um alarme para monitorar a CPU de uma instância EC2 e enviar notificações por e-mail com **CloudWatch e SNS**
+✅ Criar um alarme para monitorar a CPU de uma instância **EC2** e enviar notificações por e-mail com **CloudWatch e SNS**
 
-✅ Ativar o rastreamento de eventos e armazenar logs em um bucket S3 com **CloudTrail e S3**
+✅ Ativar o rastreamento de eventos e armazenar logs em um bucket **S3** com **CloudTrail e S3**
 
 ✅ Acessar e analisar os logs gerados com **CloudTraill**
 
 ## 💡 Cenário:
 
-Uma startup de tecnologia está migrando sua infraestrutura para a AWS e precisa garantir monitoramento eficiente e auditoria detalhada para cumprir normas de conformidade.
+Uma startup de tecnologia está migrando sua infraestrutura para a **AWS** e precisa garantir monitoramento eficiente e auditoria detalhada para cumprir normas de conformidade.
 
-- O time de operações quer receber alertas caso a CPU de suas instâncias EC2 atinja um limite crítico.
-- O setor de segurança precisa rastrear todas as atividades na conta AWS para detectar ações suspeitas e cumprir requisitos de auditoria.
-- Os logs devem ser armazenados com segurança no S3 para futura análise e conformidade regulatória.
+- O time de operações quer receber alertas caso a CPU de suas instâncias **EC2** atinja um limite crítico.
+- O setor de segurança precisa rastrear todas as atividades na conta **AWS** para detectar ações suspeitas e cumprir requisitos de auditoria.
+- Os logs devem ser armazenados com segurança no **S3** para futura análise e conformidade regulatória.
 
-Para atender a esses requisitos, você configurará CloudWatch, SNS, CloudTrail e S3, garantindo monitoramento proativo e auditoria contínua.
+Para atender a esses requisitos, você configurará **CloudWatch**, **SNS**, **CloudTrail** e **S3**, garantindo monitoramento proativo e auditoria contínua.
 
 ## 🔧 Pré-requisitos:
-- **Conta AWS**: Conta ativa com permissões para EC2, CloudWatch, CloudTrail, SNS e S3.
+- **Conta AWS**: Conta ativa com permissões para **EC2**, **CloudWatch**, **CloudTrail**, **SNS** e **S3**.
 - **Permissões IAM**: `CloudWatchFullAccess`, `AWSCloudTrail_FullAccess`, `AmazonSNSFullAccess`, `AmazonS3FullAccess`, `AmazonEC2FullAccess`.
 - **Navegador Web**.
 
